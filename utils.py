@@ -24,11 +24,11 @@ def roots(a, b, c):
         return (x1,x2)
 
     if delta == 0:
-        x= (-b/2*a)
-        return x
+        x= ((-b)/(2*a))
+        return (x,)
 
     if delta < 0:
-        return None
+        return ()
     pass
 
 def integrate(function, lower, upper):
@@ -46,5 +46,5 @@ def integrate(function, lower, upper):
 
 if __name__ == '__main__':
     print(fact(5))
-    print(roots(2, 5, 2))
+    print(roots(1, 0, 2))
     print(integrate('x ** 2 - 1', -1, 1))
