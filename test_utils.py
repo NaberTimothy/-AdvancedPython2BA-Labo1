@@ -12,9 +12,9 @@ class TestUtils(unittest.TestCase):
         pass
     
     def test_roots(self):
-        self.assertEqual(utils.roots(0,0,0),0)
+        self.assertEqual(utils.roots(0,0,0),(0,))
         self.assertEqual(utils.roots(2,5,2),(-0.5,-2))
-        self.assertIsNone(utils.roots(1,0,1))
+        self.assertIsNone(utils.roots(1,0,1),)
         pass
     
     def test_integrate(self):
